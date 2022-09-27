@@ -9,26 +9,34 @@ h1{
     font-weight: 600;
 }
 
-.articlecard-wrapper{
+.article-page{
+    background-color: darksalmon;
+}
+
+.articleCard{
    border: solid 2px black;
+   display: flex;
    width: 100%;
    margin-bottom: 50px;
+   padding: 20px;
+
 }
 
 .articlecard-title h2{
- font-size: 32px;
- font-weight: 600;
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 1%;
 }
 
 .articleCard--image{
-    display: flex;
     background-color: gray;
+    flex-basis: 70%;
     min-height: 250px;
-    flex-basis: 30%;
+    
 }
 
-.articlecard--text{
-    font-size: 12px;
+.articleCard--text{
+    padding: 15px;
 }
 
 .articlecard--link{
