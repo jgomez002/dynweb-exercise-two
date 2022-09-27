@@ -1,15 +1,18 @@
 import React from "react";
+import {useParams} from "react-router";
+import Data from "../components/data";
 
 
 function Article(){
-    const backgroundImageUrl = "url('https://wallpaperforu.com/wp-content/uploads/2021/06/Pompompurin-Wallpaper241600x1200.jpg')"
+        const { id } = useParams();
+        const articleData = Data.find((article) => 
+            article.id === id);
+       // console.log(articleData)
+
     return (
      <main className="article-page">
         <header className="article-page-header">
-            {/* style={{
-                backgroundImage: backgroundImageUrl
-            }} */}
-            <h1>Article Title</h1>
+            <h1>{articleData.title}</h1>
             <h3>Wednesday, August 22, 2019</h3>
             <h3>blah blah blah</h3>
         </header>
