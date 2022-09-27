@@ -25,12 +25,12 @@ h1{
 .articlecard-title h2{
     font-size: 34px;
     font-weight: 600;
-    margin-bottom: 1%;
+    
 }
 
 .articleCard--image{
     background-color: gray;
-    flex-basis: 70%;
+    flex-basis: 30%;
     min-height: 250px;
     
 }
