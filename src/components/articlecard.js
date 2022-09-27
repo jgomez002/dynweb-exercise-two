@@ -1,6 +1,6 @@
 import React from "react";
 
-function ArticleCard({description, date, imageAlt, imageSrc, title}){
+function ArticleCard({description, date, imageAlt, imageSrc, title, id}){
     return (
         <div className="articleCard">
             <div className="articleCard--image">
@@ -10,7 +10,7 @@ function ArticleCard({description, date, imageAlt, imageSrc, title}){
             <h2>{title}</h2>
                 <p className="date">{date}</p>
                 <p className="description"> {description}</p>
-                <p className="articleCard--link"> <a href="/article">Read More</a> </p>
+                <p className="articleCard--link"> <a href={`/article/${id}`}>Read More</a> </p>
             </div>
         </div>
     );

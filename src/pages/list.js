@@ -12,9 +12,10 @@ function List(){
                  key = {i}
                  description = {article.blurb}
                  date = {article.publishedDate}
+                 id= {article.id}
                  title= {article.title}
                  imageAlt ={article.image.alt}
-                 imageSrc= {article.image.src}
+                 imageSrc= {article.image.src} //.url not .src, review css
                  />
             ))}
         </main>
