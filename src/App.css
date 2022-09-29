@@ -11,17 +11,19 @@ h1{
 
 .article-page{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    padding: 0;
 }
 
 .article-page-header{
     display: flex;
     text-align: left;
-    width: 100%; 
+    justify-content: center;
+    align-items: center;
     padding-left: 400px;
     padding-right: 400px;
+    flex-direction: column;
+    
 }
 .articleCard{
    border: solid 2px black;
