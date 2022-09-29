@@ -3,6 +3,7 @@ import ArticleCard from "../components/articlecard";
 import Data from "../components/data"
 
 
+
 function List(){
     return(
         <main className="page-wrapper">
@@ -15,7 +16,7 @@ function List(){
                  id= {article.id}
                  title= {article.title}
                  imageAlt ={article.image.alt}
-                 imageSrc= {article.image.src} //.url not .src, review css
+                 imageSrc= {article.image.url} //.url not .src, review css
                  />
             ))}
         </main>
