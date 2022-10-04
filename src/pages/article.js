@@ -22,13 +22,13 @@ function Article(){
             backgroundSize: "cover",
 
         }}>
-            
+          <div className="article-page-content">
             <h1>{articleData.title}</h1>
             <p>{articleDate}</p>
             <p>{articleData.blurb}</p>
-          
+         </div>  
         </header>
-        <section className="article-page-body">
+        <section className="article-page-content">
         {articleData.articleText.map((text,i)=> {
             // i in the index in this situation, text is the object//
             const type = text.type; 
